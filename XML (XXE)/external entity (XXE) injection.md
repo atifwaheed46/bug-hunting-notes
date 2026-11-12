@@ -151,4 +151,19 @@ so   repalce  payload and see the relsut
 
 here  you  can see this give server response and now we have successfully exploit it and solved 
 
+
+### htb : ctf try out (challenge : Jailbreak )
+
+I opened the ip address.
+
+I went to diffferentt options “STAT”, “INV”, “DATA”, “MAP”, “RADIO” and found nothing.
+![alt text](../pics/4xxe.png)
+
+Then I went to ROM and found an XML document. Analyzing this XML document, we can infer that the application extracts a specific value identified as “Version” from the XML input to construct a response message.
+
+then come  to know that this can  be the xml  injecton vulnerability , i instantly put xml  payload (after lots of error)
+i  got the  flag 
+![alt text](../pics/5xxe.png)
+
+
 ### 2 : Exploiting XXE to perform SSRF attacks
